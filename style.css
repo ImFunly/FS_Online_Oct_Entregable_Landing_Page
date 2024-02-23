@@ -1,0 +1,173 @@
+body {
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+h1 {
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1 span:nth-child(1) {
+  color: #65c3bf;
+}
+
+h1 span:nth-child(2) {
+  color: #efb7be;
+}
+
+.menu {
+  width: 100%;
+  position: relative;
+}
+
+.menu p {
+  font-size: 18px;
+}
+
+.menu .contenedor {
+  padding-left: 3vw;
+  padding-right: 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  justify-content: center;
+  cursor: pointer;
+}
+
+.botones {
+  color: #65c3bf;
+  display: flex;
+  align-items: center;
+  gap: 350px;
+  max-width: 45%;
+}
+
+.bPrincipales {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.bPrincipales li {
+  display: flex;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.bSecundarios {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.bSecundarios li {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.bSecundarios li i {
+  font-size: 20px;
+}
+
+.contenido {
+  width: 100%;
+}
+
+.fondo {
+  background-image: url("./img/bgcien.jpg");
+  height: calc(95vh - 80px);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.soporte {
+  color: white;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 3%;
+  height: 6%;
+  background: #ea9fa6ff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 2%;
+  right: 1%;
+}
+
+.regalo {
+  color: white;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  width: 10%;
+  height: 6%;
+  background: #ea9fa6ff;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 2%;
+  left: 1%;
+  font-size: 18px;
+}
+
+.desplegable {
+  display: none;
+  color: #65c3bf;
+  float: right;
+  margin-right: 2%;
+  line-height: 125px;
+  cursor: pointer;
+}
+
+#desplegable {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .desplegable {
+    display: flex;
+    float: left;
+    position: absolute;
+    top: -22.5%;
+    left: 2%;
+  }
+  #logo {
+    position: relative;
+    left: 8%;
+  }
+  .botones .bPrincipales ul li {
+    display: block;
+  }
+  .bPrincipales {
+    display: flex;
+    flex-direction: column;
+    display: none;
+  }
+  .regalo {
+    width: 11.5%;
+  }
+  .soporte {
+    width: 11.5%;
+  }
+  .regalo p {
+    display: none;
+  }
+  .fondo {
+    height: calc(50vh - 80px);
+  }
+}
+
+/* Lo siento, no soy capaz de hacer ninguno de los dos menús reponsivos :'( */
